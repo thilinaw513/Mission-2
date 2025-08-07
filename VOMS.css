@@ -1,0 +1,277 @@
+body {
+    font-family: "Sans-serif", Tahoma;
+    background-image: url("https://peakvisor.com/photo/SD/Auckland-New-Zealand-Mt-Eden.jpg");
+    background-repeat: no-repeat;
+    background-position: fill;
+    background-size: cover;
+    margin:0px;
+    
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    color: #113F67;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* HEADER SECTION */
+nav > ul {
+    display: flex;
+    justify-content: center;
+    margin: 50px 100px;
+    padding: 0;
+
+}
+
+.btn {
+    background-color: #dcafdf;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.nav-link {
+    list-style: none;
+    margin: 2px 5px;
+    padding: 8px 15px;
+    width: 150px;
+    height: 25px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 3px grey;
+    border-radius: 25px;
+   
+}
+
+.nav-link:hover {
+    width: 300px;
+    height: 80px;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+.nav-link:hover a{
+    color: white;
+    
+}
+
+.Animation {
+  width: 100px;
+  height: 100px;
+  background: none;
+  position: relative;
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 1800px;}
+
+}
+
+/* MAIN SECTION */
+main {
+    display: flex;
+    /* background-color: lightblue; */
+    align-items: center;
+    margin: 150px 100px;
+   
+}
+
+/* LEFT SECTION */
+
+.logo_image {
+    height: 490px;
+    width:500px;
+}
+
+.left {
+    
+    margin: 30px 100px;
+    width:45%; 
+}
+
+
+.left p {
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  
+}
+
+.chat-btn {
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 14px 25px;
+    width: 200px;
+    font-family: inherit;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+}
+
+.chat-btn:hover {
+    background-color: #ce1313;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-btn:hover a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* RIGHT SECTION */
+
+.right{
+    /* width: 70%; */
+    justify-content: center;
+    flex-basis: 70%;
+    background-color: pink;
+    opacity: 80%;
+    padding: 20px;
+}
+
+/* Image Placeholder */
+
+.imgph {
+    background-color: grey;
+    width: 100%;
+    height: 270px;
+    padding: 0px;
+}
+
+/* Taller image placeholder */
+
+.imgph2 {
+    background-color: #aaa;
+    width: 100%;
+    height: 270px;
+    padding: 0px;
+}
+
+
+/* DROPDOWN MENU */
+
+a:hover, .dropdown2:hover{
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.dropdown2 {
+    list-style: none;
+    margin: 2px 5px;
+    padding: 8px 15px;
+    width: 150px;
+    height: 25px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 3px grey;
+    position: relative;
+    background-color: #dcafdf;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  border-radius: 25px;
+}
+
+.dropdown2-content a {
+  color: white;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  text-align: left;
+  border-radius: 25px;
+  
+}
+
+.dropdown2-content a:hover {
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  
+}
+
+.dropdown2:hover .dropdown2-content {
+  display: block;
+
+}
+
+/* FOOTER */
+.footer{
+    height:40px;
+    padding:20px;
+    text-align: center;
+    background-color:cornflowerblue;
+    color:black;
+    font-weight: bold;
+    font-family: "";
+}
+
+
+/* Carousel */
+
+.carousel {
+  position: relative;
+}
+
+.carousel_item {
+  height: 500px;
+  width: 500px;
+  background: #dcafdf;
+  opacity: 80%;
+  padding: 1em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  display: none;
+}
+
+
+.carousel_item_selected {
+  display: block;
+}
+
+.carousel_nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel_button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel_button_selected {
+  background: whitesmoke;
+}

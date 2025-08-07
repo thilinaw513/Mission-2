@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css" />
+
+    <style>
+        input {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+   <form action="mailto:thilinaw@missionreadyhq.com" method="post" autocomplete="on" enctype="text/plain">
+
+    <fieldset>
+        <legend>Registration Form</legend>
+       
+        <!-- FIRST INPUT FIELD -->
+        <br />
+        <label>Name:</label>
+        <input type="text" name="name" required placeholder="First and last name..." />
+        <br />
+        <br />
+
+        <!-- SECOND INPUT FIELD -->
+        <label >Email:</label>
+        <input type="email" name="email" style="color: black"/>
+        <br />
+        <br />
+
+        <!-- THIRD INPUT FIELD -->
+        <label >Contact No:</label>
+        <input type="number" name="contact no" style="color: black"/>
+        <br />
+        <br />
+
+        <!-- FOURTH INPUT FIELD -->
+        <label >Documents:</label>
+        <input type="file" name="documents" style="color: black"/>
+        <br />
+        <br />
+
+        <!-- RADIO BUTTON -->
+        <label>Subject:</label>
+        <br>
+        <br>
+
+        <input type="radio" id="sales" name="subject" value="sales">
+        <label for="sales">Student Visa</label>
+        <br>
+
+        <input type="radio" id="support" name="subject" value="support">
+        <label for="support">Work Visa</label>
+        <br>
+
+        <input type="radio" id="support" name="subject" value="support">
+        <label for="support">Visitor Visa</label>
+        <br>
+
+        <input type="radio" id="other" name="subject" value="other">
+        <label for="other">Other</label>
+        <br>
+        <br>
+
+        <!--  MESSAGE INPUT -->
+        <label>Message:</label>
+        <br>
+        <br>
+        <textarea name="message" placeholder="What can we help you with?"></textarea>
+        <br>
+        <br>
+
+
+        <!-- SUBMIT BUTTON -->
+        <input type="submit" value="submit" />
+        <br>
+        <br>
+    </fieldset>
+
+   </form> 
+</body>
+</html>

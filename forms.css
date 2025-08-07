@@ -1,0 +1,45 @@
+legend {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+input {
+    width: 40%;
+}
+
+label {
+    font-family: Tahoma, sans-serif;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    padding: 2px 2px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #FFBC4C
+}
+
+input[type=radio] {
+    width: 20px;
+}
+
+input[type="radio"] + label {
+    color: white;    
+}
+
+textarea {
+    border: 2px solid #FFBC4C
+}
+
+input[type="submit"] {
+    background-color: #FFBC4C;
+    color: black;
+    width: 30%;
+
+}
+
+form {
+    background-color: #799EFF;
+}
