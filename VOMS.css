@@ -8,6 +8,7 @@ body {
     
 }
 
+
 h1 {
     justify-content: center;
     text-align: center;
@@ -53,8 +54,7 @@ nav > ul {
     background-color: cornflowerblue;
     color: white;
     cursor: pointer;
-    text-shadow: 2px 2px 4px #000000;
-    
+    text-shadow: 2px 2px 4px #000000;    
 }
 
 .nav-link:hover a{
@@ -87,10 +87,10 @@ main {
 
 /* LEFT SECTION */
 
-.logo_image {
-    height: 490px;
+/* .logo_image {
+    height: 40px;
     width:500px;
-}
+} */
 
 .left {
     
@@ -106,6 +106,12 @@ main {
     color: white;
   
 }
+
+.left a {
+  color: wheat;
+  border-color: #000000;
+}
+
 
 .chat-btn {
     display: inline-block;
@@ -129,6 +135,12 @@ main {
     text-decoration: none;
 }
 
+#calculator {
+color: white;
+
+}
+
+
 /* RIGHT SECTION */
 
 .right{
@@ -149,7 +161,7 @@ main {
     padding: 0px;
 }
 
-/* Taller image placeholder */
+/* Image placeholder 2 */
 
 .imgph2 {
     background-color: #aaa;
@@ -222,25 +234,31 @@ a:hover, .dropdown2:hover{
     height:40px;
     padding:20px;
     text-align: center;
-    background-color:cornflowerblue;
-    color:black;
+    background-color:#113F67;
+    color:white;
     font-weight: bold;
     font-family: "";
 }
 
 
+
 /* Carousel */
 
 .carousel {
+  display: flex;
+  overflow: visible;
+  max-width: 600px;
+  margin: auto;
   position: relative;
+  
 }
 
 .carousel_item {
   height: 500px;
   width: 500px;
-  background: #dcafdf;
+  background: #113F67;
   opacity: 80%;
-  padding: 1em;
+  padding: 1.1em;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 2em;
@@ -255,7 +273,7 @@ a:hover, .dropdown2:hover{
 
 .carousel_nav {
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -268,10 +286,82 @@ a:hover, .dropdown2:hover{
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 5px;
   cursor: pointer;
 }
 
 .carousel_button_selected {
   background: whitesmoke;
+}
+
+
+.carousel_arrow {
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+
+}
+
+.carousel_arrow.left{
+  left: -10px;
+}
+
+.carousel_arrow.right {
+  right: 10px;
+}
+
+/* Points calculator */
+
+#pointsForm {
+  background-color: rgba(255, 255, 255, 0.3); /* white with 30% opacity */
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px; /* space between items */
+  font-family: Arial, sans-serif;
+  color: #fff; /* white text */
+  backdrop-filter: blur(8px); /* subtle blur behind */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#pointsForm label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#pointsForm input[type="number"],
+#pointsForm select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+#pointsForm button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#pointsForm button:hover {
+  background-color: #3ea0ff;
 }

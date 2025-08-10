@@ -16,7 +16,7 @@
 
     <body>
          <!-- ANIMATION OF PLANE --> 
-            <img src="./Plane.png" class="Animation"/></img>
+            <img src="images/Plane.png" class="Animation"/></img>
 
         <header>
             <nav>
@@ -47,17 +47,41 @@
 
             <!-- Adding a carousel-->
             <div class="carousel">
-            <div class="carousel_item"><img src="./Logo.png" class="logo_image"/></img></div>
-            <div class="carousel_item">Content #2</div>
-            <div class="carousel_item">Content #3</div>
-            <div class="carousel_item">Content #4</div>
+                <img class="carousel_item" src="images/Logo.png">
+                <img class="carousel_item" src="images/Client1.PNG">
+                <img class="carousel_item" src="images/Client2.PNG">
+                <img class="carousel_item" src="images/Client3.png">
             </div>
+
+            
 
             <!-- LEFT SECTION -->
             <p>Your path to Victory!</p>
-            <p>Contact us via <a href="https://www.facebook.com/share/1CQUCsGtAc/?mibextid=wwXIfr"> Facebook</a></p>
-            <button class="btn chat-btn"><a href="forms.html">Your Dream Starts Here</a></button>
-        
+            <p>Contact us via <a href="https://www.facebook.com/share/1CQUCsGtAc/?mibextid=wwXIfr">Facebook</a></p>
+            <button class="btn chat-btn"><a href="forms/forms.html">Your Dream Starts Here</a></button>
+
+            <!--Points Calculator-->
+
+            <p>How many points do you have towards residency?</p>
+
+            <form id="pointsForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" value="19" min="0" max="120" required/>
+            <label for="education">Education Level:</label>
+            <select id="education" name="education" required>
+            <option value="none">None</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="masters">Master's Degree</option>
+            <option value="phd">PhD</option>
+            <!-- add more options as needed -->
+            </select>
+            <button type="submit">Calculate Points</button>
+            </form>
+
+            <p id="result"</p>
+
+            
+
         </div>
 
         <div class="right">
