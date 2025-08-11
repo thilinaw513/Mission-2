@@ -17,16 +17,12 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
   // Add left arrow, right arrow, and dot navigation to the carousel
   // These will be positioned relative to the entire carousel
-  carousel.insertAdjacentHTML(
-    "beforeend",
-    `
-      <button class="carousel_arrow left">&#8592;</button> 
-      <button class="carousel_arrow right">&#8594;</button>
-      <div class="carousel_nav">
-        ${buttonsHtml.join("")}
-      </div>
-    `
-  );
+  // takes a chunk of HTML code (as a string) and inserts it directly into the DOM inside the carousel element, placing it right before the closing tag of that element.
+  carousel.insertAdjacentHTML("beforeend", `     
+
+  <button class="carousel_arrow left">&#8592;</button>
+  <button class="carousel_arrow right">&#8594;</button>
+  <div class="carousel_nav">${buttonsHtml.join("")}</div>`);
 
   // Grab all the navigation dots we just added
   const buttons = carousel.querySelectorAll(".carousel_button");
