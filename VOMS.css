@@ -1,6 +1,7 @@
 body {
     font-family: "Sans-serif", Tahoma;
-    background-image: url("https://peakvisor.com/photo/SD/Auckland-New-Zealand-Mt-Eden.jpg");
+    /* background-image: url("https://peakvisor.com/photo/SD/Auckland-New-Zealand-Mt-Eden.jpg"); */
+    background-image: url("https://images.pexels.com/photos/17824132/pexels-photo-17824132.jpeg");
     background-repeat: no-repeat;
     background-position: fill;
     background-size: cover;
@@ -13,6 +14,11 @@ h1 {
     justify-content: center;
     text-align: center;
     color: #113F67;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #0057e7, #00d2ff, #0057e7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 a {
@@ -60,6 +66,70 @@ nav > ul {
 .nav-link:hover a{
     color: white;
     
+}
+
+/* DROPDOWN MENU */
+
+a:hover, .dropdown2:hover{
+  width: 300px;
+  height: 80px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px #000000;    
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.dropdown2 {
+    list-style: none;
+    margin: 2px 5px;
+    padding: 8px 15px;
+    width: 150px;
+    height: 25px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 3px grey;
+    position: relative;
+    background-color: #dcafdf;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  border-radius: 25px;
+}
+
+.dropdown2-content a {
+  color: white;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  text-align: left;
+  border-radius: 25px;
+  
+}
+
+.dropdown2-content a:hover {
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  
+}
+
+.dropdown2:hover .dropdown2-content {
+  display: block;
+
 }
 
 .Animation {
@@ -165,64 +235,6 @@ color: white;
 }
 
 
-/* DROPDOWN MENU */
-
-a:hover, .dropdown2:hover{
-  transition: all 0.3s ease-in-out;
-  
-}
-
-.dropdown2 {
-    list-style: none;
-    margin: 2px 5px;
-    padding: 8px 15px;
-    width: 150px;
-    height: 25px;
-    transition: all 0.3s ease-in-out;
-    text-shadow: 0 0 3px grey;
-    position: relative;
-    background-color: #dcafdf;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 25px;
-}
-
-.dropdown2-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: transparent;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 3;
-  border-radius: 25px;
-}
-
-.dropdown2-content a {
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  text-align: left;
-  border-radius: 25px;
-  
-}
-
-.dropdown2-content a:hover {
-  background-color: transparent;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 3;
-  
-}
-
-.dropdown2:hover .dropdown2-content {
-  display: block;
-
-}
-
 /* FOOTER */
 .footer{
     height:40px;
@@ -244,6 +256,7 @@ a:hover, .dropdown2:hover{
   max-width: 750px;
   margin: auto;
   position: relative;
+  flex-wrap: wrap;
   
 }
 
@@ -251,7 +264,7 @@ a:hover, .dropdown2:hover{
   height: 500px;
   width: 500px;
   background: #113F67;
-  opacity: 80%;
+  opacity: 90%;
   padding: 1.1em;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
@@ -295,7 +308,7 @@ a:hover, .dropdown2:hover{
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   border: none;
   width: 40px;

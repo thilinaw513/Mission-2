@@ -17,7 +17,8 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
   // Add left arrow, right arrow, and dot navigation to the carousel
   // These will be positioned relative to the entire carousel
-  // takes a chunk of HTML code (as a string) and inserts it directly into the DOM inside the carousel element, placing it right before the closing tag of that element.
+  // takes a chunk of HTML code (as a string) and inserts it directly into the DOM inside the carousel element, 
+  // placing it right before the closing tag of that element.
   carousel.insertAdjacentHTML("beforeend", `     
 
   <button class="carousel_arrow left">&#8592;</button>
