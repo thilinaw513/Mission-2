@@ -23,6 +23,7 @@ a {
 /* HEADER SECTION */
 nav > ul {
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
     margin: 50px 100px;
     padding: 0;
@@ -33,7 +34,6 @@ nav > ul {
     background-color: #dcafdf;
     text-align: center;
     font-size: 20px;
-    
 }
 
 .nav-link {
@@ -79,7 +79,6 @@ nav > ul {
 /* MAIN SECTION */
 main {
     display: flex;
-    /* background-color: lightblue; */
     align-items: center;
     margin: 150px 100px;
    
@@ -87,15 +86,11 @@ main {
 
 /* LEFT SECTION */
 
-/* .logo_image {
-    height: 40px;
-    width:500px;
-} */
 
 .left {
-    
-    margin: 30px 100px;
-    width:45%; 
+    flex-basis: 60%;
+    margin: auto;
+    width: 45%; 
 }
 
 
@@ -144,9 +139,8 @@ color: white;
 /* RIGHT SECTION */
 
 .right{
-    /* width: 70%; */
+    flex-basis: 40%;
     justify-content: center;
-    flex-basis: 70%;
     background-color: pink;
     opacity: 80%;
     padding: 20px;
@@ -240,14 +234,14 @@ a:hover, .dropdown2:hover{
     font-family: "";
 }
 
-
+/* left
 
 /* Carousel */
 
 .carousel {
   display: flex;
   overflow: visible;
-  max-width: 600px;
+  max-width: 750px;
   margin: auto;
   position: relative;
   
@@ -273,7 +267,7 @@ a:hover, .dropdown2:hover{
 }
 
 .carousel_nav {
-  width: 100%;
+  width: 75%;
   padding: 10px 0;
   position: absolute;
   bottom: 0;
@@ -315,12 +309,14 @@ a:hover, .dropdown2:hover{
 
 }
 
-.carousel_arrow.left{
-  left: -145px;
+.carousel_arrow.left {
+  left:-6%;
+  position: absolute;
 }
 
 .carousel_arrow.right {
-  right: -35px;
+  right: 18%;
+  position: absolute;
 }
 
 
@@ -331,6 +327,7 @@ a:hover, .dropdown2:hover{
   padding: 15px 20px;
   border-radius: 10px;
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 15px; /* space between items */
   font-family: Arial, sans-serif;
