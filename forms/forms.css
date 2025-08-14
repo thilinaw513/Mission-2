@@ -41,5 +41,8 @@ input[type="submit"] {
 }
 
 form {
-    background-color: #799EFF;
+    background-color: cornflowerblue;
+    background-image: url("https://peakvisor.com/photo/SD/Auckland-New-Zealand-Mt-Eden.jpg");
+    background-position: fill;
+    background-size: cover;
 }
