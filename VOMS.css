@@ -49,7 +49,8 @@ nav > ul {
     list-style: none;
     margin: 2px 5px;
     padding: 8px 15px;
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: 25px;
     transition: all 0.3s ease-in-out;
     text-shadow: 0 0 3px grey;
@@ -58,7 +59,8 @@ nav > ul {
 }
 
 .nav-link:hover {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 80px;
     background-color: cornflowerblue;
     color: white;
@@ -139,7 +141,8 @@ a:hover, .dropdown2:hover{
   position: fixed; /* keeps it at the top of the viewport regardless of scroll */
   top: 20px;       /* adjust height from the top */
   left: 0;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
   height: auto;
   animation: flyAcross 5s linear infinite;
 }
@@ -199,7 +202,8 @@ main {
     display: inline-block;
     margin: 20px 0px;
     padding: 14px 25px;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     font-family: inherit;
     font-weight: 700;
     border: none;
@@ -238,8 +242,8 @@ color: white;
 
 .imgph {
     background-color: grey;
-    width: 100%;
-    height: 270px;
+    max-width: 100%;
+    height: auto;
     padding: 0px;
 }
 
@@ -247,7 +251,8 @@ color: white;
 
 .imgph2 {
     background-color: #aaa;
-    width: 100%;
+    max-width: 100%;
+    height: uto;
     height: 270px;
     padding: 0px;
 }
@@ -273,6 +278,7 @@ color: white;
   display: flex;
   overflow: visible;
   max-width: 720px;
+  width: 100%;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -282,6 +288,7 @@ color: white;
 .carousel_item {
   height: 500px;
   max-width: 470px;
+  width: 100%;
   background: #113F67;
   opacity: 90%;
   padding: 1.1em;
@@ -408,3 +415,28 @@ color: white;
     }
 
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
+
