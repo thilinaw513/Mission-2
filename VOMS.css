@@ -5,7 +5,8 @@ body {
     background-repeat: no-repeat;
     background-position: fill;
     background-size: cover;
-    margin:0px;
+    margin:0;
+    padding:0;
     
 }
 
@@ -20,6 +21,8 @@ h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+
 
 a {
     color: black;
@@ -133,12 +136,23 @@ a:hover, .dropdown2:hover{
 }
 
 .Animation {
+  position: fixed; /* keeps it at the top of the viewport regardless of scroll */
+  top: 20px;       /* adjust height from the top */
+  left: 0;
   width: 100px;
-  height: 100px;
-  background: none;
-  position: relative;
-  animation: mymove 10s infinite;
+  height: auto;
+  animation: flyAcross 5s linear infinite;
 }
+
+@keyframes flyAcross {
+  from {
+    left: -100px; /* start just outside the left side */
+  }
+  to {
+    left: 100vw; /* move across full viewport width */
+  }
+}
+
 
 @keyframes mymove {
   from {left: 0px;}
@@ -151,6 +165,8 @@ main {
     display: flex;
     align-items: center;
     margin: 150px 100px;
+    gap: 20px;
+    padding: 20px;
    
 }
 
@@ -253,18 +269,19 @@ color: white;
 /* Carousel */
 
 .carousel {
+  position: relative;
   display: flex;
   overflow: visible;
-  max-width: 750px;
-  margin: auto;
-  position: relative;
-  flex-wrap: wrap;
+  max-width: 720px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   
 }
 
 .carousel_item {
   height: 500px;
-  width: 500px;
+  max-width: 470px;
   background: #113F67;
   opacity: 90%;
   padding: 1.1em;
@@ -274,11 +291,12 @@ color: white;
   color: #ffffff;
   display: none;
   border-radius: 10%;
+  overflow: hidden;
 }
 
 
 .carousel_item_selected {
-  display: block;
+  display:block;
 }
 
 .carousel_nav {
